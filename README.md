@@ -4,9 +4,9 @@ A sass file with useful tweaks to the bootstrap framework to make your website l
 Import this file after importing bootstrap sass but before any of your custom sass files
 
 Example:
-@import "~bootstrap/scss/bootstrap";\n
-@import "sss"\n
-@import "variables"\n
+@import "~bootstrap/scss/bootstrap";
+@import "sss"
+@import "variables"
 etc.
 
 What does this file actually do?
@@ -16,5 +16,5 @@ What does this file actually do?
 - Add vertical padding to sections
 - Add extra horizontal padding to bootstrap containers
 
-All of these classes are built with mobile responsive websites in mind\n and ensures your website still looks great on any device!
+All of these classes are built with mobile responsive websites in mind and ensures your website still looks great on any device!
 
