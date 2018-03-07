@@ -1,0 +1,86 @@
+/*
+    Reset all bootstrap headings to ems for mobile scalibility
+*/
+h1 { font-size: 2.5em;  }
+h2 { font-size: 2em;    }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em;  }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em;    }
+
+
+/*
+    Media Queries based on bootstraps grid system
+
+    USE CASE: 
+    @media #{$md} {
+        *css to be applied when screen is larger than 768px*
+    }
+*/
+$sm: 'only screen and (min-width:480px)';
+$md: 'only screen and (min-width:768px)';
+$lg: 'only screen and (min-width:1024px)';
+
+
+/*
+    Smaller font sizes on mobile devices
+    13px for Mobiile, 14px for Tablets, 16px for Desktops
+*/
+body {
+  font-size: 13px;
+  @media #{$md} {
+    font-size: 14px;
+  }
+  @media #{$lg} {
+    font-size: 16px;
+  }
+}
+
+
+/*
+    Padding on sections with mobile scalibility
+    
+    USE CASE:
+    <section>
+        <div class="container"> 
+            *Your Content*
+        </div>
+    </section>
+*/
+section {
+  padding: 10% 0;
+  @media #{$md} {
+    padding: 7.5% 0;
+  }
+  @media #{$lg} {
+    padding: 5% 0;
+  }
+}
+
+
+/*
+    Additional horizontal padding to bootstrap containers with mobile scalibility
+    
+    USE CASE:
+    <div class="container text"> 
+        *Will be constrained to a max-width of 860px*
+    </div>
+*/
+.container {
+  padding: 0 10%;
+  @media #{$md} {
+    padding: 0 7.5%;
+  }
+  @media #{$lg} {
+    padding: 0 5%;
+  }
+  &.text {
+    max-width: 540px;
+    @media #{$md} {
+      max-width: 720px;
+    }
+    @media #{$lg} {
+      max-width: 860px;
+    }
+  }
+}
